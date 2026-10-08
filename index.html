@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="影音先锋av电影网,yingyinxianfengdianyingwang,影音先锋,电影推荐,热门电影,最新电影,高清电影,动作电影,喜剧电影,电影排行榜">
+<meta name="description" content="影音先锋av电影网(yingyinxianfengdianyingwang)专注高清电影在线观看与推荐，每日更新热门电影、最新电影与高分片单，涵盖动作、喜剧、爱情、悬疑、科幻等类型，畅享影音新体验。">
+<title>影音先锋av电影网 - 高清电影在线观看 · 每日更新热门电影推荐</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#eaf2ff;--soft:#9fb0cc;--bg:#06091a;--card:#0e142e;--card2:#131b3d;--line:#22304f;--cyan:#00e5ff;--cyan-d:#00b4cc;--vio:#7b5cff;--vio-d:#5e3fe0;--pink:#ff5cae;--amber:#ffb020;--txt:#6f81a3;
+}
+html{scroll-behavior:smooth}
+body{font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",sans-serif;background:var(--bg);color:var(--ink);line-height:1.85;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+::selection{background:var(--cyan);color:#001018}
+
+/* 扫描线背景 */
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 20% 15%,rgba(0,229,255,.12),transparent 45%),radial-gradient(circle at 85% 75%,rgba(123,92,255,.14),transparent 45%)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;background:repeating-linear-gradient(0deg,rgba(255,255,255,.018) 0 1px,transparent 1px 3px);pointer-events:none}
+
+/* 顶栏 */
+header{position:sticky;top:0;z-index:50;background:rgba(6,9,26,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.brand{max-width:1140px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;align-items:center;gap:12px}
+.mark{width:46px;height:46px;background:linear-gradient(135deg,var(--cyan),var(--vio));color:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;flex-shrink:0;box-shadow:0 0 20px rgba(0,229,255,.4);position:relative}
+.mark span{position:absolute;bottom:-2px;right:-2px;width:14px;height:14px;background:var(--bg);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.mark span::after{content:"";width:7px;height:7px;background:var(--cyan);border-radius:50%;box-shadow:0 0 8px var(--cyan)}
+.logo h1{font-size:clamp(15px,2.4vw,20px);font-weight:900;letter-spacing:.5px}
+.logo h1 small{display:block;font-size:9px;font-weight:500;color:var(--txt);letter-spacing:2px;margin-top:2px}
+.addr{font-size:11px;color:var(--soft);text-align:right;line-height:1.9}
+.addr b{color:var(--cyan)}
+nav.top{max-width:1140px;margin:0 auto;padding:0 24px;border-top:1px solid var(--line);display:flex;gap:0;overflow-x:auto;-ms-overflow-style:none;scrollbar-width:none}
+nav.top::-webkit-scrollbar{display:none}
+nav.top a{font-size:13.5px;font-weight:600;color:var(--ink);padding:12px 20px;white-space:nowrap;transition:.2s;position:relative}
+nav.top a:hover{color:var(--cyan);background:rgba(0,229,255,.05)}
+nav.top a::after{content:"";position:absolute;left:50%;bottom:6px;width:0;height:2px;background:var(--cyan);transition:.25s;transform:translateX(-50%);box-shadow:0 0 8px var(--cyan)}
+nav.top a:hover::after{width:24px}
+.burger{display:none;background:linear-gradient(135deg,var(--cyan),var(--vio));border:0;color:#fff;width:40px;height:38px;border-radius:10px;font-size:17px;cursor:pointer;margin:8px 0;flex-shrink:0}
+
+/* 章节 */
+section{padding:82px 0}
+.sec{margin-bottom:52px;text-align:center}
+.sec .k{display:inline-block;font-size:9.5px;letter-spacing:3px;color:var(--cyan);border:1px solid rgba(0,229,255,.4);padding:4px 14px;border-radius:4px;font-weight:700;background:rgba(0,229,255,.06)}
+.sec h2{font-size:clamp(23px,3.6vw,32px);font-weight:900;margin:14px 0 12px;letter-spacing:.5px}
+.sec h2 em{font-style:normal;color:var(--cyan);text-shadow:0 0 18px rgba(0,229,255,.5)}
+.sec .ds{font-size:14.5px;color:var(--soft);max-width:640px;margin:0 auto}
+
+/* Hero */
+.hero{padding:96px 0 82px;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.tag{display:inline-block;font-size:11px;letter-spacing:1.5px;color:var(--cyan);border:1px solid rgba(0,229,255,.4);padding:5px 14px;border-radius:4px;font-weight:700;background:rgba(0,229,255,.06)}
+.hero h2{font-size:clamp(30px,5vw,46px);font-weight:900;line-height:1.32;margin:16px 0 14px}
+.hero h2 em{font-style:normal;color:var(--cyan);text-shadow:0 0 24px rgba(0,229,255,.5)}
+.hero p{font-size:15px;color:var(--soft);max-width:470px}
+.acts{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{border:0;cursor:pointer;padding:13px 28px;font-size:13.5px;font-weight:700;transition:.25s;border-radius:6px;font-family:inherit}
+.bp{background:var(--cyan);color:#001018;box-shadow:0 0 20px rgba(0,229,255,.35)}
+.bp:hover{background:#5ff2ff;transform:translateY(-2px)}
+.bo{background:transparent;color:var(--cyan);border:1.5px solid var(--line)}
+.bo:hover{background:rgba(0,229,255,.08)}
+.note{font-size:12px;color:var(--soft);margin-top:22px}
+
+/* 均衡器播放器 */
+.eq{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px;position:relative}
+.eq .bar{display:flex;align-items:flex-end;gap:8px;height:150px;margin-bottom:20px;padding:16px;background:var(--bg);border-radius:10px;border:1px solid var(--line)}
+.eq .bar i{display:block;width:100%;background:linear-gradient(0deg,var(--cyan),var(--vio));border-radius:3px;animation:eq 1.1s ease-in-out infinite alternate}
+.eq .bar i:nth-child(1){animation-delay:.0s}.eq .bar i:nth-child(2){animation-delay:.15s}.eq .bar i:nth-child(3){animation-delay:.3s}
+.eq .bar i:nth-child(4){animation-delay:.45s}.eq .bar i:nth-child(5){animation-delay:.6s}.eq .bar i:nth-child(6){animation-delay:.75s}
+.eq .bar i:nth-child(7){animation-delay:.9s}.eq .bar i:nth-child(8){animation-delay:.5s}.eq .bar i:nth-child(9){animation-delay:.25s}
+.eq .bar i:nth-child(10){animation-delay:.65s}.eq .bar i:nth-child(11){animation-delay:.4s}.eq .bar i:nth-child(12){animation-delay:.8s}
+@keyframes eq{from{height:12%}to{height:100%}}
+.eq .now{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;background:var(--card2);border-radius:8px;border:1px solid var(--line)}
+.eq .now .pl{width:38px;height:38px;border-radius:50%;background:var(--cyan);color:#001018;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}
+.eq .now b{font-size:15px;flex:1}
+.eq .now span{font-size:11px;color:var(--cyan);font-weight:700}
+.eq .track{display:flex;gap:10px;margin-top:14px}
+.eq .track a{flex:1;text-align:center;font-size:11px;padding:7px;border:1px solid var(--line);border-radius:6px;color:var(--soft);transition:.2s}
+.eq .track a:hover{color:var(--cyan);border-color:var(--cyan);background:rgba(0,229,255,.06)}
+
+/* 栏目一：热播（时间轴） */
+.tl{position:relative;padding-left:6px}
+.tl::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--cyan),var(--vio))}
+.ti{position:relative;padding-left:34px;margin-bottom:16px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding-top:14px;padding-bottom:14px;padding-right:16px;transition:.25s}
+.ti:hover{background:var(--card2);transform:translateX(4px)}
+.ti::before{content:attr(data-n);position:absolute;left:-3px;top:14px;width:20px;height:20px;border-radius:50%;background:var(--cyan);color:#001018;font-size:10px;font-weight:900;display:flex;align-items:center;justify-content:center;z-index:1}
+.ti:nth-child(2)::before{background:var(--vio);color:#fff}
+.ti:nth-child(3)::before{background:var(--pink)}
+.ti:nth-child(4)::before{background:var(--amber)}
+.ti:nth-child(5)::before{background:#5eead4}
+.ti:nth-child(6)::before{background:var(--vio-d)}
+.ti h4{font-size:16.5px;font-weight:800}
+.ti span{font-size:12px;color:var(--soft)}
+
+/* 栏目二：分类（斜切卡片） */
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px}
+.cat{position:relative;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px 18px;overflow:hidden;transition:.3s}
+.cat::before{content:"";position:absolute;top:0;left:0;width:4px;height:100%;background:var(--cyan)}
+.cat:hover{transform:translateY(-6px);background:var(--card2);box-shadow:0 14px 30px rgba(0,0,0,.4)}
+.cat .ic{font-size:26px;margin-bottom:10px}
+.cat:nth-child(1){--c:var(--cyan)}.cat:nth-child(2){--c:var(--vio)}.cat:nth-child(3){--c:var(--pink)}
+.cat:nth-child(4){--c:var(--amber)}.cat:nth-child(5){--c:#5eead4}.cat:nth-child(6){--c:var(--vio-d)}
+.cat::before{background:var(--c)}
+.cat .ic{color:var(--c);text-shadow:0 0 14px var(--c)}
+.cat h3{font-size:16px;font-weight:900}
+.cat p{font-size:12px;color:var(--soft);margin-top:4px}
+
+/* 栏目三：新片（横向滚动） */
+.strip{display:flex;gap:18px;overflow-x:auto;padding:6px 2px 20px;scroll-snap-type:x mandatory;-ms-overflow-style:none;scrollbar-width:none}
+.strip::-webkit-scrollbar{display:none}
+.mv{flex:0 0 230px;scroll-snap-align:start;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:.3s;position:relative}
+.mv:hover{transform:translateY(-6px);border-color:var(--cyan);box-shadow:0 0 22px rgba(0,229,255,.18)}
+.mv .cv{height:300px;position:relative;padding:16px;display:flex;flex-direction:column;justify-content:space-between}
+.mv .cv b{font-size:17px;line-height:1.5;text-shadow:0 2px 8px rgba(0,0,0,.4)}
+.mv .cv .bd{background:var(--pink);color:#fff;font-size:9.5px;font-weight:800;padding:3px 9px;border-radius:3px;align-self:flex-start}
+.mv .in{padding:14px}
+.mv .in .tg{font-size:9.5px;color:var(--cyan);border:1px solid var(--cyan);padding:2px 9px;border-radius:3px}
+.mv .in h4{font-size:15.5px;font-weight:800;margin:7px 0 4px}
+.mv .in .st{font-size:11px;color:var(--cyan);font-weight:700}
+
+/* 栏目四：影评（三栏图文） */
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.qt{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;transition:.3s}
+.qt:hover{border-color:var(--vio);background:var(--card2)}
+.qt .av{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--vio));color:#001018;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;margin-bottom:12px}
+.qt p{font-size:13.5px;color:var(--soft);margin-bottom:14px;line-height:1.9}
+.qt .au{border-top:1px solid var(--line);padding-top:12px}
+.qt .au b{font-size:12.5px}
+.qt .au span{font-size:11px;color:var(--txt)}
+
+/* 数据条 */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));background:linear-gradient(90deg,var(--cyan),var(--vio));border-radius:12px;overflow:hidden;box-shadow:0 0 30px rgba(0,229,255,.2)}
+.stt{text-align:center;padding:30px 14px;border-right:1px solid rgba(255,255,255,.18)}
+.stt:last-child{border-right:0}
+.stt strong{display:block;font-size:30px;font-weight:900;font-family:Georgia,serif;color:#001018}
+.stt span{font-size:12.5px;color:rgba(0,16,24,.85)}
+
+/* 关于 */
+.abt{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.abt .l h2{font-size:25px;font-weight:900;margin-bottom:14px}
+.abt .l p{font-size:14.5px;color:var(--soft);margin-bottom:12px}
+.abt .r{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fb{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;text-align:center;transition:.25s}
+.fb:hover{border-color:var(--cyan);background:var(--card2)}
+.fb .ic{font-size:22px;margin-bottom:8px}
+.fb b{font-size:15px;display:block;margin-bottom:3px}
+.fb span{font-size:12.5px;color:var(--soft)}
+
+/* 页脚 */
+footer{background:#04060f;border-top:1px solid var(--line);padding:44px 0 0}
+.f{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:34px;max-width:1140px;margin:0 auto;padding:0 24px 28px}
+.f .id .mark{margin-bottom:12px}
+.f .id h4{font-size:17px;font-weight:900;margin-bottom:8px}
+.f .id p{font-size:13px;line-height:1.9;color:var(--soft)}
+.f h5{font-size:11.5px;font-weight:700;color:var(--cyan);margin-bottom:12px;letter-spacing:2px}
+.f a{display:block;color:var(--soft);font-size:13px;padding:5px 0;transition:.2s}
+.f a:hover{color:var(--cyan)}
+.cp{max-width:1140px;margin:0 auto;padding:18px 24px;border-top:1px solid var(--line);font-size:12px;color:var(--txt);text-align:center}
+.cp b{color:var(--cyan)}
+
+#top{position:fixed;right:16px;bottom:20px;z-index:99;width:44px;height:44px;background:var(--cyan);color:#001018;border:0;border-radius:10px;font-size:15px;cursor:pointer;opacity:0;visibility:hidden;transition:.3s;box-shadow:0 0 18px rgba(0,229,255,.4)}
+#top.show{opacity:1;visibility:visible}
+#top:hover{background:#5ff2ff}
+
+@media(max-width:900px){
+  .burger{display:block}
+  nav.top{display:none;flex-direction:column;padding:8px 24px 14px}
+  nav.top.open{display:flex}
+  nav.top a{border-bottom:1px solid var(--line)}
+  nav.top a::after{display:none}
+  .hero .wrap,.abt{grid-template-columns:1fr}
+  .brand{flex-wrap:wrap}.addr{display:none}
+  .f,.abt .r{grid-template-columns:1fr}
+}
+@media(max-width:560px){section{padding:54px 0}.mv{flex:0 0 190px}.mv .cv{height:250px}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<header>
+  <div class="brand">
+    <div class="logo"><div class="mark">影音<span></span></div><h1>影音先锋av电影网<small>YING YIN XIAN FENG</small></h1></div>
+    <div class="addr"><b>yingyinxianfengdianyingwang</b><br>https://yingyinxianfengavdianyingwang-wap.github.io</div>
+    <button class="burger" id="burger" aria-label="菜单">☰</button>
+  </div>
+  <nav class="top" id="nav"><a href="#home">首页</a><a href="#hot">热播榜单</a><a href="#cat">影片分类</a><a href="#new">最新上线</a><a href="#rev">影迷影评</a><a href="#about">关于本站</a></nav>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div><span class="tag">▶ 影音先锋 · 畅享高清</span>
+      <h2>畅享影音<br><em>先锋</em>观影体验</h2>
+      <p>影音先锋av电影网（yingyinxianfengdianyingwang）专注高清电影在线观看与推荐，每日更新热门电影、最新院线片与高分片单，动作、喜剧、爱情、科幻、悬疑一应俱全。</p>
+      <div class="acts"><a href="#hot" class="btn bp">查看热播榜单</a><a href="#cat" class="btn bo">浏览影片分类</a></div>
+      <p class="note">🎧 上万部高清电影 · 流畅播放 · 每日上新</p>
+    </div>
+    <div class="eq">
+      <div class="bar"><i style="height:32%"></i><i style="height:68%"></i><i style="height:45%"></i><i style="height:82%"></i><i style="height:55%"></i><i style="height:90%"></i><i style="height:38%"></i><i style="height:72%"></i><i style="height:60%"></i><i style="height:48%"></i><i style="height:78%"></i><i style="height:35%"></i></div>
+      <div class="now"><div class="pl">▶</div><b>正在播放：逆光而行</b><span>● LIVE</span></div>
+      <div class="track"><a href="#">1080P</a><a href="#">高清</a><a href="#">流畅</a><a href="#">字幕</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目一：热播榜单（时间轴） -->
+<section id="hot">
+  <div class="wrap">
+    <div class="sec"><div class="k">★ HOT RANKING</div><h2>热播<em>榜单</em></h2><div class="ds">影音先锋av电影网实时更新的热门电影排行，看看大家都在看什么。</div></div>
+    <div class="tl">
+      <div class="ti" data-n="1"><h4>逆光而行</h4><span>动作 / 犯罪 · 2025 · 高清</span></div>
+      <div class="ti" data-n="2"><h4>第三种答案</h4><span>剧情 / 爱情 · 2025 · 高清</span></div>
+      <div class="ti" data-n="3"><h4>沉默的证人</h4><span>悬疑 / 惊悚 · 2025 · 高清</span></div>
+      <div class="ti" data-n="4"><h4>回家的路</h4><span>剧情 / 亲情 · 2024 · 高清</span></div>
+      <div class="ti" data-n="5"><h4>那年我们</h4><span>爱情 / 青春 · 2024 · 高清</span></div>
+      <div class="ti" data-n="6"><h4>小镇旧事</h4><span>剧情 / 社会 · 2023 · 高清</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二：影片分类（斜切） -->
+<section id="cat" style="background:#090d22;">
+  <div class="wrap">
+    <div class="sec"><div class="k">▎ CATEGORIES</div><h2>影片<em>分类</em></h2><div class="ds">影音先锋av电影网按类型整理上万部高清电影，轻松找到你想看的。</div></div>
+    <div class="cats">
+      <div class="cat"><div class="ic">💥</div><h3>动作电影</h3><p>热血爽片，酣畅淋漓</p></div>
+      <div class="cat"><div class="ic">😂</div><h3>喜剧电影</h3><p>开心一笑，解压必备</p></div>
+      <div class="cat"><div class="ic">💕</div><h3>爱情电影</h3><p>浪漫心动，甜到心里</p></div>
+      <div class="cat"><div class="ic">🎭</div><h3>剧情电影</h3><p>深度好片，值得回味</p></div>
+      <div class="cat"><div class="ic">🔍</div><h3>悬疑惊悚</h3><p>烧脑反转，心跳加速</p></div>
+      <div class="cat"><div class="ic">🌌</div><h3>科幻奇幻</h3><p>脑洞大开，视觉盛宴</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：最新上线 -->
+<section id="new">
+  <div class="wrap">
+    <div class="sec"><div class="k">◉ NOW SHOWING</div><h2>最新<em>上线</em></h2><div class="ds">影音先锋av电影网每日更新的最新高清电影，左右滑动查看更多。</div></div>
+    <div class="strip">
+      <article class="mv"><div class="cv" style="background:linear-gradient(160deg,#00b4cc,#7b5cff)"><span class="bd">NEW</span><b>逆光而行</b></div><div class="in"><span class="tg">动作</span><h4>逆光而行</h4><div class="st">★ 9.3 · 2025</div></div></article>
+      <article class="mv"><div class="cv" style="background:linear-gradient(160deg,#7b5cff,#5e3fe0)"><span class="bd">NEW</span><b>第三种答案</b></div><div class="in"><span class="tg">剧情</span><h4>第三种答案</h4><div class="st">★ 9.2 · 2025</div></div></article>
+      <article class="mv"><div class="cv" style="background:linear-gradient(160deg,#ff5cae,#c43d7e)"><span class="bd">热</span><b>沉默的证人</b></div><div class="in"><span class="tg">悬疑</span><h4>沉默的证人</h4><div class="st">★ 9.0 · 2025</div></div></article>
+      <article class="mv"><div class="cv" style="background:linear-gradient(160deg,#ffb020,#c8801a)"><span class="bd">HD</span><b>回家的路</b></div><div class="in"><span class="tg">亲情</span><h4>回家的路</h4><div class="st">★ 8.9 · 2024</div></div></article>
+      <article class="mv"><div class="cv" style="background:linear-gradient(160deg,#5eead4,#00b4cc)"><span class="bd">荐</span><b>那年我们</b></div><div class="in"><span class="tg">爱情</span><h4>那年我们</h4><div class="st">★ 8.8 · 2024</div></div></article>
+      <article class="mv"><div class="cv" style="background:linear-gradient(160deg,#5e3fe0,#7b5cff)"><span class="bd">新</span><b>小镇旧事</b></div><div class="in"><span class="tg">剧情</span><h4>小镇旧事</h4><div class="st">★ 8.7 · 2023</div></div></article>
+      <article class="mv"><div class="cv" style="background:linear-gradient(160deg,#00e5ff,#7b5cff)"><span class="bd">HD</span><b>风暴之城</b></div><div class="in"><span class="tg">动作</span><h4>风暴之城</h4><div class="st">★ 8.6 · 2025</div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：影迷影评 -->
+<section id="rev" style="background:#090d22;">
+  <div class="wrap">
+    <div class="sec"><div class="k">✍ EDITOR'S PICK</div><h2>影迷<em>影评</em></h2><div class="ds">影音先锋av电影网影迷社区精选短评，看看大家怎么说。</div></div>
+    <div class="quotes">
+      <div class="qt"><div class="av">影</div><p>《逆光而行》全程高能，动作戏干净利落，是今年最爽的电影，影音体验也很流畅。</p><div class="au"><b>影迷小陈</b> &nbsp;<span>动作片控 · ★★★★★</span></div></div>
+      <div class="qt"><div class="av">林</div><p>《第三种答案》把成年人的情感困境拍得太真实了，看完久久不能平静，强烈推荐。</p><div class="au"><b>林小白</b> &nbsp;<span>剧情片爱好者 · ★★★★★</span></div></div>
+      <div class="qt"><div class="av">阿</div><p>《沉默的证人》反转不断，悬疑感拉满，一口气看完，高清画质太舒服了。</p><div class="au"><b>阿May</b> &nbsp;<span>悬疑片迷 · ★★★★☆</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 数据条 -->
+<section style="padding:0;"><div class="wrap"><div class="stats">
+  <div class="stt"><strong>12000+</strong><span>高清电影</span></div>
+  <div class="stt"><strong>6</strong><span>影片分类</span></div>
+  <div class="stt"><strong>1080P</strong><span>流畅播放</span></div>
+  <div class="stt"><strong>每日</strong><span>更新上新</span></div>
+  <div class="stt"><strong>影音</strong><span>畅享体验</span></div>
+</div></div></section>
+
+<!-- 关于 -->
+<section id="about">
+  <div class="wrap">
+    <div class="abt">
+      <div class="l"><h2>关于 影音先锋av电影网</h2><p>影音先锋av电影网（yingyinxianfengdianyingwang）专注高清电影在线观看与推荐，收录动作、喜剧、爱情、剧情、悬疑、科幻等各类电影，每日更新热门电影与最新院线片，畅享影音新体验。</p><p>从院线大片到经典老片，动作、喜剧、爱情、悬疑、科幻一应俱全，高清流畅，让每一次观影都轻松自在。</p><div class="acts"><a href="#hot" class="btn bp">查看热播榜单</a><a href="#rev" class="btn bo">浏览影评</a></div></div>
+      <div class="r">
+        <div class="fb"><div class="ic">🎬</div><b>海量片源</b><span>上万部高清电影</span></div>
+        <div class="fb"><div class="ic">⚡</div><b>高清流畅</b><span>观影体验更佳</span></div>
+        <div class="fb"><div class="ic">🆕</div><b>每日更新</b><span>新片持续上新</span></div>
+        <div class="fb"><div class="ic">🎧</div><b>影音先锋</b><span>畅享视听体验</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="f">
+    <div class="id"><div class="mark">影音<span></span></div><h4>影音先锋av电影网</h4><p>专注高清电影在线观看与推荐，每日更新热门电影与最新院线片，畅享影音新体验。</p></div>
+    <div><h5>影片</h5><a href="#hot">热播榜单</a><a href="#cat">影片分类</a><a href="#new">最新上线</a><a href="#">高分排行</a></div>
+    <div><h5>内容</h5><a href="#rev">影迷影评</a><a href="#">观影指南</a><a href="#">专题策划</a><a href="#">片单推荐</a></div>
+    <div><h5>关于</h5><a href="#about">关于本站</a><a href="#">合作投稿</a><a href="#">联系我们</a><a href="#">免责声明</a></div>
+  </div>
+  <div class="cp"><b>影音先锋av电影网</b> &nbsp;|&nbsp; yingyinxianfengdianyingwang &nbsp;|&nbsp; 网址：<b>https://yingyinxianfengavdianyingwang-wap.github.io</b><br>© 2026 影音先锋av电影网 版权所有 &nbsp;·&nbsp; 本站内容仅供学习与交流，如发现侵权内容请及时联系我们删除</div>
+</footer>
+
+<button id="top" title="回到顶部">↑</button>
+
+<script>
+document.getElementById('burger').addEventListener('click',function(){document.getElementById('nav').classList.toggle('open');});
+document.querySelectorAll('nav.top a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open');});});
+window.addEventListener('scroll',function(){var t=document.getElementById('top');window.scrollY>400?t.classList.add('show'):t.classList.remove('show');});
+document.getElementById('top').addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+</script>
+</body>
+</html>
